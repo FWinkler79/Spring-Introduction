@@ -6,7 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class CustomerService {
   
-  //Field injection
+  //Field injection (even private)
+  //Note: This is discouraged since it 
+  //      is virtually impossible to test.
   @Autowired
   private Logger logger;
   
