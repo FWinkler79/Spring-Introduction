@@ -14,6 +14,7 @@ public class CustomerService {
   
   private ThreadScheduler scheduler;
   
+  // constructor injection
   public CustomerService(HttpLayer httpLayer) {
     this.httpLayer = httpLayer;
   }
@@ -22,7 +23,7 @@ public class CustomerService {
     return scheduler;
   }
 
-  @Autowired
+  // setter injection
   public void setScheduler(ThreadScheduler scheduler) {
     this.scheduler = scheduler;
   }
