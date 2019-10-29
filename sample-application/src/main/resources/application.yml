@@ -4,8 +4,21 @@ spring:
   application:
     name: Spring-Sample-Application
     
-    
 com.sap.custom.config.properties:
   title:    Hello World
   subTitle: A heartfelt welcome from the world of Spring
   port: 8080
+  
+logging:
+  level:
+    com.sap: debug
+    org.springframework: info
+    org.springframework.aop.scope: debug
+    
+# Management Endpoints
+management:
+  endpoints:
+    web.exposure.include: "*"    # expose all actuator web endpoints
+  endpoint:                       
+    refresh.enabled: true        # enable /actuator/refresh endpoint.
+    health.show-details: always

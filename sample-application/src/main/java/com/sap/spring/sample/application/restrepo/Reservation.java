@@ -1,4 +1,4 @@
-package com.sap.spring.sample.application.annotations.restrepo;
+package com.sap.spring.sample.application.restrepo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
