@@ -1,0 +1,11 @@
+# debug: true
+
+spring:
+  application:
+    name: Spring-Sample-Application
+    
+    
+com.sap.custom.config.properties:
+  title:    Hello World
+  subTitle: A heartfelt welcome from the world of Spring
+  port: 8080
