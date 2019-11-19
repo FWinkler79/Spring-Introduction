@@ -20,5 +20,4 @@ management:
   endpoints:
     web.exposure.include: "*"    # expose all actuator web endpoints
   endpoint:                       
-    refresh.enabled: true        # enable /actuator/refresh endpoint.
     health.show-details: always
