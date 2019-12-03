@@ -5,13 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import com.sap.spring.sample.application.SimpleApplication;
-
 @SpringBootApplication
 public class WorkFlowApplicationSpring {
 
   public static void main(String[] args) {
-      ConfigurableApplicationContext applicationContext = SpringApplication.run(SimpleApplication.class, args);
+      ConfigurableApplicationContext applicationContext = SpringApplication.run(WorkFlowApplicationSpring.class, args);
       
       // We let spring assemble our workflow engine
       // and eventually, we just tell it to execute the workflow.
